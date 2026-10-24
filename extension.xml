@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root version="3.3" release="1">
+  <properties>
+    <name>Kraken's Krits &amp; Fumbles 2E Automation</name>
+    <version>2.0.0</version>
+    <author>Kraken Creations</author>
+    <description>Rolls the Kraken's Krits &amp; Fumbles 2E weapon tables on critical hits and fumbles and applies the result: penalties and conditions as tracker effects, extra and self damage as damage rolls, maximum damage or an extra die on the next damage roll. Works for player and GM rolls. The module Kraken's Krits &amp; Fumbles 2E holds the tables to read.</description>
+    <loadorder>1000</loadorder>
+    <ruleset><name>2E</name></ruleset>
+  </properties>
+
+  <announcement>
+    <text>Kraken's Krits &amp; Fumbles 2E Automation v2.0.0. Settings: Options &gt; Kraken Krits &amp; Fumbles. /krakenkrits</text>
+    <font>systemfont</font>
+  </announcement>
+
+  <base>
+    <includefile source="strings/strings_krakenkrits.xml" />
+    <script name="KrakenKritsData" file="scripts/data_krakenkrits.lua" />
+    <script name="KrakenKrits" file="scripts/manager_krakenkrits.lua" />
+  </base>
+</root>
